@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filma</title>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Georgia&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Georgia, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #A52A2A;
+        }
+       h1 {
+    font-family: Georgia, sans-serif;
+    text-align: center;
+    color: white; /
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    margin-top: 50px; 
+    font-size:5.3em;
+}
+
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .photo {
+            width: 40%;
+            margin: 10px;
+            text-align: center;
+        }
+        .photo img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .video {
+            width: 40%;
+            margin: 10px;
+            text-align: center;
+        }
+        .video iframe {
+            width: 100%;
+            height: 300px;
+            margin-top: 10px;
+        }
+         nav ul li a.active {
+            background-color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+     <header style="display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; background-color: beige; border-bottom: 1px solid #ddd; font-family: 'Montserrat', sans-serif;">
+    <div class="logo" style="font-family: 'Montserrat', sans-serif; font-size: 24px; color: #333;">E-Shqip</div>
+    <nav>
+        <ul style="list-style: none; padding: 0; margin: 0; display: flex; gap: 20px;">
+            <li><a href="home.html" style="color: #333; text-decoration: none; font-size: 18px; padding: 5px;">Kreu</a></li>
+            <li><a href="klasat.html" style="color: #333; text-decoration: none; font-size: 18px; padding: 5px;">Klasat</a></li>
+            <li><a href="filma.html" class="active"; style="color: #333; text-decoration: none; font-size: 18px; padding: 5px;">Argëtim</a></li>
+            <li><a href="quiz.html" style="color: #333; text-decoration: none; font-size: 18px; padding: 5px;">Quiz</a></li>
+            <li><a href="aboutus.html" style="color: #333; text-decoration: none; font-size: 18px; padding: 5px;" >Rreth Nesh</a></li>
+            <li><a href="loggedout.html" style="color: #333; text-decoration: none; font-size: 18px; padding: 5px;">Dil</a></li>
+        </ul>
+    </nav>
+</header>
+    <h1>Kinostudio "Shqipëria e Re" paraqet...</h1>
+    <div class="row">
+        <div class="photo">
+            <img src="kapedani.jpeg" alt="Photo 1">
+        </div>
+        <div class="video">
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/4eNdnA3fSws?si=j7WB3d37YOFW1jqC" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="row">
+        <div class="photo">
+            <img src="pallati176.jpeg" alt="Photo 2">
+        </div>
+        <div class="video">
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/SyYujAplaTU?si=k4y2QTbMqUZb2onB" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="row">
+        <div class="photo">
+            <img src="dyheremat.jpeg" alt="Photo 3">
+        </div>
+        <div class="video">
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/azuXv3av06M?si=wOur8xXwu-7p2-En" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="row">
+        <div class="photo">
+            <img src="pallati.jpeg" alt="Photo 4">
+        </div>
+        <div class="video">
+            <iframe width="100%" height="300" src="https://www.youtube.com/embed/SyYujAplaTU?si=k4y2QTbMqUZb2onB" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>

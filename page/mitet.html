@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitologjia Shqiptare - E-Shqip</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+                background: url('alvin/backgroundmitet.jpg') no-repeat center center fixed; 
+  background-size: cover;
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: beige;
+            border-bottom: 1px solid #ddd;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .logo {
+            font-size: 24px;
+            color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 5px;
+        }
+
+        nav ul li a.active {
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-left {
+            flex: 1;
+        }
+
+        .footer-right {
+            flex: 1;
+        }
+
+        .footer-left h3,
+        .footer-right h3 {
+            margin-bottom: 10px;
+        }
+
+        .social-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .social-links li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .footer-bottom {
+            background-color: #222;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .section p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .section .content {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        .section img {
+            width: 200px; /* Specify the width */
+            height: auto;
+            margin-right: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe,  
+        .video-container object,  
+        .video-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">E-Shqip</div>
+    <nav>
+        <ul>
+            <li><a href="home.html">Kreu</a></li>
+            <li><a href="klasat.html">Klasat</a></li>
+            <li><a href="filma.html">Argetim</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="aboutus.html" >Rreth Nesh</a></li>
+            <li><a href="loggedout.html">Dil</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <section id="mitologjia-shqiptare" class="section">
+        <h2>Mitologjia Shqiptare</h2>
+        <p>Mitologjia shqiptare është e pasur me legjenda dhe mite që janë pjesë e trashëgimisë së thellë kulturore të popullit shqiptar. Këto mite reflektojnë historinë, traditat dhe vlerat e këtij populli, duke e bërë atë një thes kulturor të pashoq.</p>
+    </section>
+
+    <section id="miti-i-rozafes" class="section">
+        <h2>Miti i Rozafës</h2>
+        <div class="content">
+            <img src="alvin/rozafa.jpg" alt="Kështjella e Rozafës">
+            <p>Miti i Rozafës është një nga mitet më të njohura shqiptare, i cili tregon për sakrificën e një gruaje për të shpëtuar një kështjellë. Sipas legjendës, tre vëllezër ishin duke ndërtuar një kështjellë, por çdo natë ajo që ndërtohej gjatë ditës rrëzohej. Një orakull u tha atyre se kështjella do të qëndronte vetëm nëse një grua sakrifikohej dhe ndërtohej në muret e saj. Rozafa, gruaja e vëllait më të vogël, pranoi të sakrifikohej me kusht që një pjesë e trupit të saj të lihej jashtë për të ushqyer fëmijën e saj të vogël. Kështjella e Rozafës në Shkodër është një simbol i këtij miti dhe një nga monumentet më të rëndësishme historike në Shqipëri.</p>
+        </div>
+    </section>
+
+    <section id="miti-i-kostandinit" class="section">
+        <h2>Miti i Kostandinit dhe Doruntinës</h2>
+        <div class="content">
+            <img src="alvin/doruntina.jpg" alt="Kostandini dhe Doruntina">
+            <p>Miti i Kostandinit dhe Doruntinës është një tjetër mit i rëndësishëm shqiptar që tregon për dashurinë dhe besnikërinë e një vëllai ndaj motrës së tij. Kostandini, vëllai i nëntë, premton se do ta sjellë motrën e tij Doruntinën nga një vend i largët, pavarësisht nga vdekja e tij. Pas vdekjes së Kostandinit, ai ringjallet dhe sjell motrën e tij në shtëpi, duke mbajtur premtimin e dhënë. Ky mit reflekton vlerat e familjes dhe besnikërisë në kulturën shqiptare dhe është një nga tregimet më të njohura në folklorin shqiptar.</p>
+        </div>
+    </section>
+
+    <section id="dragoi-dhe-kreshniku" class="section">
+        <h2>Dragoi dhe Kreshniku</h2>
+        <div class="content">
+            <img src="alvin/kreshniku.jpg" alt="Dragoi dhe Kreshniku">
+            <p>Dragoi dhe Kreshniku është një mit që flet për luftën midis forcave të së mirës dhe të keqes. Dragoi përfaqëson të keqen dhe shkatërrimin, ndërsa Kreshniku është heroi që lufton për drejtësi dhe mbrojtjen e popullit të tij. Ky mit është pjesë e ciklit të kreshnikëve, një seri legjendash epike shqiptare që tregojnë për trimërinë dhe guximin e heronjve shqiptarë. Lufta midis Dragoit dhe Kreshnikut simbolizon përpjekjen e përhershme të njeriut për të triumfuar mbi vështirësitë dhe të keqen.</p>
+        </div>
+    </section>
+
+    <!-- Include the history of Rozafa video -->
+    <section id="historia-e-rozafes" class="section">
+        <h2>Historia e Rozafes</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/U8xHpKDWae8?si=VN_yGjKjIbEnOZBh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-left">
+            <h3>Contact Us</h3>
+            <p>Email: info@wbu.edu.al</p>
+            <p>Phone: +355 67 60 20 600</p>
+        </div>
+        <div class="footer-right">
+            <h3>Follow Us</h3>
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com/wbu2021">Facebook</a></li>
+                <li><a href="https://www.youtube.com/channel/UC2zvAbGazy6uzp0XETXC8CQ">Youtube</a></li>
+                <li><a href="https://www.instagram.com/westernbalkansuniversity/">Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 e-Shqip. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

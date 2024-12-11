@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harta e Shqipërisë ndër vite</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Georgia&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: url('Leksionet/desktop.png') no-repeat center center fixed; 
+
+        }
+
+ nav ul li a.active {
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        .infographic-container {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+       
+
+        .container {
+            padding: 4rem;
+            margin-left: 250px;
+        }
+
+        .slider-wrapper {
+            position: relative;
+            max-width: 48rem;
+            margin: 0 auto;
+        }
+
+        .slider {
+            display: flex;
+            aspect-ratio: 16/23;
+            height: 40rem;
+            overflow: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+        }
+
+        .slider img {
+            flex: 1 0 50%;
+            scroll-snap-align: start;
+            object-fit: cover;
+        }
+
+      
+
+        .section {
+            background: #e3f2fd;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .section .icon {
+            flex: 1;
+            text-align: center;
+        }
+
+        .section .text-content {
+            flex: 3;
+            padding-left: 20px;
+        }
+
+        .section h2 {
+            color: darkred;
+            margin-top: 0;
+        }
+
+        
+        /* Additional styles for responsiveness */
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .section .icon {
+                margin-bottom: 10px;
+            }
+
+            .section .text-content {
+                padding-left: 0;
+            }
+        }
+     h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: darkred;
+    margin-bottom: 20px;
+}
+    </style>
+
+</head>
+<body>
+     <header style="display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; background-color: beige; border-bottom: 1px solid #ddd; font-family: 'Montserrat', sans-serif;">
+    <div class="logo" style="font-family: 'Montserrat', sans-serif; font-size: 24px; color: #333;">E-Shqip</div>
+    <nav>
+        <ul style="list-style: none; padding: 0; margin: 0; display: flex; gap: 20px;">
+            <li><a href="home.html" style="color: #333; text-decoration: none; font-size: 18px; padding: 5px;">Kreu</a></li>
+            <li><a href="klasat.html" style="color: #333; text-decoration: none; font-size: 18px; padding: 5px;">Klasat</a></li>
+            <li><a href="filma.html" style="color: #333; text-decoration: none; font-size: 18px; padding: 5px;">Argëtim</a></li>
+            <li><a href="quiz.html" style="color: #333; text-decoration: none; font-size: 18px; padding: 5px;">Quiz</a></li>
+            <li><a href="aboutus.html" style="color: #333; text-decoration: none; font-size: 18px; padding: 5px;">Rreth Nesh</a></li>
+            <li><a href="loggedout.html" style="color: #333; text-decoration: none; font-size: 18px; padding: 5px;">Dil</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <div class="infographic-container">
+        <header>
+            <h1>Harta e Shqipërisë ndër vite</h1>
+        </header>
+
+        <section class="container">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img id="slide-1" src="Leksionet/isthis.jfif" alt="slide1">
+                    <img id="slide-2" src="Leksionet/no.jfif" alt="slide2">
+                    <img id="slide-3" src="Leksionet/alb.jfif" alt="slide3">
+                </div>
+            </div>
+        </section>
+
+        <div class="section">
+            <div class="icon">
+                <iframe width="200" height="100" src="https://www.youtube.com/embed/XD4v80Typvg?si=i-JeC4v3fBbJ5Ijf" allowfullscreen></iframe>
+            </div>
+            <div class="text-content">
+                <h2>Antikiteti</h2>
+                <p>Shqipëria ka qenë pjesë e disa periudhave të antikitetit, duke përfshirë periudhën e lashtë ilire dhe periudhën e Romës së lashtë. Qytetet e lashta të Ilirisë si Apollonia, Butrinti, dhe Dyrrahu (Durrësi i sotëm) tregojnë për një qytetërim të zhvilluar në këtë periudhë.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="icon">
+                <iframe width="200" height="100" src="https://www.youtube.com/embed/1gEEpSaJC_8?si=i8fjaVS5XTVI5e5u" allowfullscreen></iframe>
+            </div>
+            <div class="text-content">
+                <h2>Mesjeta</h2>
+                <p>Në periudhën e mesjetës, Shqipëria ishte pjesë e Perandorisë Bizantine dhe më vonë u nda në disa principata dhe zyrtarë të ndryshëm. Qytete si Kruja dhe Berati kishin rëndësi të veçantë në këtë periudhë. Këtu formohet kultura e ardhshme shqiptare, duke shënuar një ndryshim gradual të gjuhës dhe kulturës nga periudha antike.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="icon">
+                <iframe width="200" height="100" src="https://www.youtube.com/embed/dhbnQ8fdAcs?si=DmCk0_pDKGaF1r01" allowfullscreen></iframe>
+            </div>
+            <div class="text-content">
+                <h2>Periudha Osmane</h2>
+                <p>Në shekullin e 15, Shqipëria u pushtua nga Perandoria Osmane dhe u bë pjesë e saj për një periudhë të gjatë. Shumë qytete, përfshirë Shkodrën dhe Gjirokastrën, ishin nën sundimin osman. Kjo periudhë shënon një ndryshim të madh në strukturën shoqërore dhe politike të vendit, si dhe në identitetin kombëtar të shqiptarëve.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="icon">
+                <iframe width="200" height="100" src="https://www.youtube.com/embed/4sIrXkc6x-s?si=W0ksopk_FSQFAFiI" allowfullscreen></iframe>
+            </div>
+            <div class="text-content">
+                <h2>Shpallja e Pavarësisë (1912)</h2>
+                <p>Më 28 nëntor 1912, Shqipëria shpalli pavarësinë nga Perandoria Osmane në Vlorë. Megjithatë, shumë territore me popullsi shqiptare mbetën jashtë kufijve të shtetit të ri shqiptar, përfshirë Kosovën dhe Çamërinë.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="icon">
+                <iframe width="200" height="100" src="https://www.youtube.com/embed/2VDaBUNRR50?si=_c_U1wUE6dhnXoH-" allowfullscreen></iframe>
+            </div>
+            <div class="text-content">
+                <h2>Traktati i Londrës (1913)</h2>
+                <p>Traktati i Londrës i vitit 1913 përcaktoi kufijtë e Shqipërisë së pavarur, duke i lënë jashtë shumë territore shqiptare që u ndanë mes Serbisë, Malit të Zi dhe Greqisë.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="icon">
+                <iframe width="200" height="100" src="https://www.youtube.com/embed/M1tmnp4eiFo?si=iT8e8VkeL2WBvadd" allowfullscreen></iframe>
+            </div>
+            <div class="text-content">
+                <h2>Shekulli XX</h2>
+                <p>Në shekullin e 20, Shqipëria pësoi ndryshime të mëdha politike dhe territoriale. Gjatë Luftës së Parë Botërore, Shqipëria u pushtua nga fuqitë e huaja. Pas Luftës së Dytë Botërore, vendi u bë republikë komuniste nën udhëheqjen e Enver Hoxhës. Gjatë kësaj periudhe, Shqipëria kaloi një izolim të thellë ndërkombëtar dhe një regjim shtypës të brendshëm.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="icon">
+                <iframe width="200" height="100" src="https://www.youtube.com/embed/4kiv1PADqQE?si=_tvcISOm0S3kpHPK" allowfullscreen></iframe>
+            </div>
+            <div class="text-content">
+                <h2>Rënia e Komunizmit (1991)</h2>
+                <p>Pas rënies së regjimit komunist në vitin 1991, Shqipëria filloi një proces të vështirë tranzicioni drejt demokracisë dhe ekonomisë së tregut të lirë. Vitet '90 ishin të mbushura me trazira politike dhe ekonomike.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="icon">
+                <iframe width="200" height="100" src="https://www.youtube.com/embed/X2kj7wFCBAY?si=Aq1shclTSdSwye-c" allowfullscreen></iframe>
+            </div>
+            <div class="text-content">
+                <h2>Bashkimi Europian</h2>
+                <p>Shqipëria ka filluar negociatat për anëtarësim në Bashkimin Europian dhe është duke bërë përpjekje të mëdha për të përmbushur kriteret e anëtarësimit.</p>
+            </div>
+        </div>
+
+       
+    </div>
+<footer style="background-color: #333; color: #fff; padding: 20px 0;">
+        <div class="footer-content" style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto;">
+            <div class="footer-left" style="flex: 1;">
+                <h3 style="margin-bottom: 10px;">Contact Us</h3>
+                <p>Email: info@wbu.edu.al</p>
+                <p>Phone: +355 67 60 20 600</p>
+            </div>
+            <div class="footer-right" style="flex: 1;">
+                <h3 style="margin-bottom: 10px;">Follow Us</h3>
+                <ul class="social-links" style="list-style: binary; padding: 0; margin: 0;">
+                    <li style="display: inline; margin-right: 10px;"><a href="https://www.facebook.com/wbu2021" style="color: #fff; text-decoration: underline;">Facebook</a></li>
+                    <li style="display: inline; margin-right: 10px;"><a href="https://www.youtube.com/channel/UC2zvAbGazy6uzp0XETXC8CQ" style="color: #fff; text-decoration: underline;">Youtube</a></li>
+                    <li style="display: inline;"><a href="https://www.instagram.com/westernbalkansuniversity/" style="color: #fff; text-decoration: underline;">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom" style="background-color: #222; text-align: center; padding: 10px 0;">
+            <p>&copy; 2024 e-Shqip. All rights reserved.</p>
+        </div>
+    </footer>
+   
+</body>
+</html>

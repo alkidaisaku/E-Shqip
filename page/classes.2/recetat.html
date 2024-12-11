@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Recetat E Gatimit</title>
+	<style>
+		body {
+            font-family: Georgia, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+         header button {
+            background-color: red; 
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #foodContainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .foodItem {
+            width: 300px;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .foodItem img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .foodItem h2 {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+        .foodItem p {
+            margin-top: 10px;
+        }
+	</style>
+</head>
+<body>
+<header>
+	<h1>Recetat E Gatimit</h1>
+       <a href="file:///C:/Users/User/Desktop/studentsgrades/links.html"><button>Tutoriale </button></a>
+</header>
+<div id="foodContainer">
+        
+    </div>
+     <script>
+        const foods = [
+           
+            { name: "Receta E Flis", description: "", image: "receta1.png" },
+            
+            { name: "Receta E Fergeses", description: "", image: "receta2.png" },
+            
+            { name: "Receta E Taves Se Kosit", image: "receta3.png" },
+            
+            { name: "Receta E Lakrorit", image: "receta4.png" },
+            
+            { name: "Receta E Petullave Te Fshira", image: "receta5.png"  }
+        ];
+        function displayFoods() {
+            const foodContainer = document.getElementById("foodContainer");
+
+            foods.forEach(food => {
+                const foodItem = document.createElement("div");
+                foodItem.classList.add("foodItem");
+
+                const foodName = document.createElement("h2");
+                foodName.textContent = food.name;
+                foodItem.appendChild(foodName);
+
+                const foodImage = document.createElement("img");
+                foodImage.src = food.image;
+                foodImage.alt = food.name;
+                foodItem.appendChild(foodImage);
+
+                
+
+                const foodDescription = document.createElement("p");
+                foodDescription.textContent = food.description;
+                foodItem.appendChild(foodDescription);
+
+                foodContainer.appendChild(foodItem);
+            });
+        }
+
+        window.onload = displayFoods;
+        </script>
+</body>
+</html>

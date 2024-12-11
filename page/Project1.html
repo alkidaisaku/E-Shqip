@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Page</title>
+    <style>
+        body {
+            font-family: Georgia, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header button {
+            background-color: red;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .container {
+            display: none;
+        }
+        .container.active {
+            display: block;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .item {
+            width: calc(33.33% - 20px);
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .item h2 {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+        .item p {
+            margin-top: 10px;
+        }
+        .videoItem {
+            width: 300px;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        .videoItem iframe {
+            width: 100%;
+            height: 200px;
+            border: none;
+            border-radius: 5px;
+        }
+        .videoItem h2 {
+            margin-top: 10px;
+            font-size: 1.2em;
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; background-color: beige; border-bottom: 1px solid #ddd; font-family: 'Montserrat', sans-serif;">
+    <div class="logo" style="font-family: 'Montserrat', sans-serif; font-size: 24px; color: #333;">E-Shqip</div>
+    <nav>
+        <ul style="list-style: none; padding: 0; margin: 0; display: flex; gap: 20px;">
+            <li><a href="home.html" style="color: #333; text-decoration: none; font-size: 18px; padding: 5px;">Kreu</a></li>
+            <li><a href="klasat.html" style="color: #333; text-decoration: none; font-size: 18px; padding: 5px;">Klasat</a></li>
+            <li><a href="filma.html" style="color: #333; text-decoration: none; font-size: 18px; padding: 5px;">Argëtim</a></li>
+            <li><a href="quiz.html" style="color: #333; text-decoration: none; font-size: 18px; padding: 5px;">Quiz</a></li>
+            <li><a href="aboutus.html" style="color: #333; text-decoration: none; font-size: 18px; padding: 5px;" >Rreth Nesh</a></li>
+            <li><a href="loggedout.html" style="color: #333; text-decoration: none; font-size: 18px; padding: 5px;">Dil</a></li>
+        </ul>
+    </nav>
+</header>
+    <header>
+        <h1>Ushqime Tradicional Shqiptare</h1>
+        <button onclick="showSection('foodContainer')">Ushqimet</button>
+        <button onclick="showSection('recetatContainer')">Recetat</button>
+        <button onclick="showSection('videoContainer')">Tutorialë</button>
+    </header>
+
+    <div class="container active" id="foodContainer">
+        <div class="content">
+            <div class="item">
+                <img src="behari/flia.jpg" alt="Fli">
+                <h2>Fli</h2>
+                <p>Fli ose Flia është një ushqim tradicional shqiptar. Flija gatuhet më shumë nga zonat veriore të Shqipërisë si Kukësi dhe nga Kosova.</p>
+            </div>
+            <div class="item">
+                <img src="behari/ferges.jpg" alt="Fërgesë">
+                <h2>Fërgesë</h2>
+                <p>Fërges Tirane është një specialitet specash nga Tirana.</p>
+            </div>
+            <div class="item">
+                <img src="behari/tavekosi.jpg" alt="Tavë Kosi">
+                <h2>Tavë Kosi</h2>
+                <p>Tavë kosi (tavë Elbasani) është një nga gjellët më karakteristike shqiptare. Ajo përgatitet me mish qengji ose dashi, vezë e kos e pak oriz.</p>
+            </div>
+            <div class="item">
+                <img src="behari/lakror.jpg" alt="Lakror">
+                <h2>Lakror</h2>
+                <p>Lakror është një gatim shqiptare i zakonshëm tradicional bërë nga brumi dhe i mbushur me përbërës të ndryshëme që janë nga perime ose mish të ndryshëm.</p>
+            </div>
+            <div class="item">
+                <img src="behari/petulla.jpg" alt="Petulla Të Fshira">
+                <h2>Petulla Të Fshira</h2>
+                <p>Petullat e Fshira janë ndër gatimet më speciale të kuzhinës tradicionale shqiptare, ku në përgatitjen e tyre spikat zona e qarkut të Korçës.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="recetatContainer">
+        <div class="content">
+            <div class="item">
+                <img src="behari/receta1.png" alt="Receta E Flis">
+                <h2>Receta E Flis</h2>
+                <p>Receta e flis është një recetë tradicionale shqiptare për një ushqim të shijshëm dhe të shëndetshëm. Përshkrimi i detajuar i përgatitjes së kësaj recete.</p>
+            </div>
+            <div class="item">
+                <img src="behari/receta2.png" alt="Receta E Fergeses">
+                <h2>Receta E Fergeses</h2>
+                <p>Receta e fërgesës është një specialitet shqiptar me bazë mjalti dhe produkte të tjera të qumështit. Përshkrimi i detajuar i përgatitjes së kësaj recete.</p>
+            </div>
+            <div class="item">
+                <img src="behari/receta3.png" alt="Receta E Taves Se Kosit">
+                <h2>Receta E Taves Se Kosit</h2>
+                <p>Receta e tavës së kosit është një recetë tradicionale shqiptare e njohur për shijen e saj të veçantë. Përshkrimi i detajuar i përgatitjes së kësaj recete.</p>
+            </div>
+            <div class="item">
+                <img src="behari/receta4.png" alt="Receta E Lakrorit">
+                <h2>Receta E Lakrorit</h2>
+                <p>Receta e lakrorit është një gatim tradicional shqiptar i përgatitur me bazë brumit dhe mbushur me perime ose mish. Përshkrimi i detajuar i përgatitjes së kësaj recete.</p>
+            </div>
+            <div class="item">
+                <img src="behari/receta5.png" alt="Receta E Petullave Te Fshira">
+                <h2>Receta E Petullave Te Fshira</h2>
+                <p>Receta e petullave të fshira është një gatim i njohur në kuzhinën tradicionale shqiptare, me bazë brumë mielli dhe mbushje të ndryshme. Përshkrimi i detajuar i përgatitjes së kësaj recete.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="videoContainer">
+        <div class="content">
+            <div class="videoItem">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/zUIyma5_hys?si=2vQ_8-whEVcqWs_N" frameborder="0" allowfullscreen></iframe>
+                <h2>Fli</h2>
+                <p>Video tutorial për gatimin e Fli.</p>
+            </div>
+            <div class="videoItem">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/_HzhcqFUQUI?si=NVKdY_atGP3vIw9V" frameborder="0" allowfullscreen></iframe>
+                <h2>Fërgesë</h2>
+                <p>Video tutorial për gatimin e Fërgesës.</p>
+            </div>
+            <div class="videoItem">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/-chpgaUD1lQ?si=LluGEQ6Ml3v5Kg_s" frameborder="0" allowfullscreen></iframe>
+                <h2>Tavë Kosi</h2>
+                <p>Video tutorial për gatimin e Tavës së Kosit.</p>
+            </div>
+            <div class="videoItem">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/8je4DLXmXEk?si=7eXNKhVesve-j6QE" frameborder="0" allowfullscreen></iframe>
+                <h2>Lakror</h2>
+                <p>Video tutorial për gatimin e Lakrorit.</p>
+            </div>
+            <div class="videoItem">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/TTpk_HjQI0g?si=hedX1Hzpf_gydoTi" frameborder="0" allowfullscreen></iframe>
+                <h2>Petulla te Fshira</h2>
+                <p>Video tutorial për gatimin e Petullave të Fshira.</p>
+            </div>
+        </div>
+    </div>
+    <footer style="background-color: #333; color: #fff; padding: 20px 0;">
+        <div class="footer-content" style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto;">
+            <div class="footer-left" style="flex: 1;">
+                <h3 style="margin-bottom: 10px;">Contact Us</h3>
+                <p>Email: info@wbu.edu.al</p>
+                <p>Phone: +355 67 60 20 600</p>
+            </div>
+            <div class="footer-right" style="flex: 1;">
+                <h3 style="margin-bottom: 10px;">Follow Us</h3>
+                <ul class="social-links" style="list-style: binary; padding: 0; margin: 0;">
+                    <li style="display: inline; margin-right: 10px;"><a href="https://www.facebook.com/wbu2021" style="color: #fff; text-decoration: underline;">Facebook</a></li>
+                    <li style="display: inline; margin-right: 10px;"><a href="https://www.youtube.com/channel/UC2zvAbGazy6uzp0XETXC8CQ" style="color: #fff; text-decoration: underline;">Youtube</a></li>
+                    <li style="display: inline;"><a href="https://www.instagram.com/westernbalkansuniversity/" style="color: #fff; text-decoration: underline;">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom" style="background-color: #222; text-align: center; padding: 10px 0;">
+            <p>&copy; 2024 e-Shqip. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.container');
+            sections.forEach(section => {
+                if (section.id === sectionId) {
+                    section.classList.add('active');
+                } else {
+                    section.classList.remove('active');
+                }
+            });
+        }
+
+        // Show the food container section by default
+        window.onload = () => {
+            showSection('foodContainer');
+        };
+    </script>
+</body>
+</html>
